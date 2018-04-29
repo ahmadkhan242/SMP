@@ -14,7 +14,7 @@ var Semester        = require("./models/semester");
 var User            = require("./models/user");
 var Notice            = require("./models/notice");
 
-var detailRoutes    = require("./routes/detail");
+// var detailRoutes    = require("./routes/detail");
 // var DATABASEURL = mongodb://localhost/ems ;
 // mongoose.connect("mongodb://localhost/ems");
  // mongoose.connect(process.env.DATABASEURL);
@@ -223,6 +223,6 @@ function isLoggedIn(req, res, next){
   }
   res.redirect("/login");
 };
-app.listen(process.env.DATABASEURL, function(){
+app.listen(2000, function(){
   console.log("your server is on from port 2000");
 });
