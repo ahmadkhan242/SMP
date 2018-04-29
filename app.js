@@ -14,10 +14,8 @@ var Semester        = require("./models/semester");
 var User            = require("./models/user");
 var Notice            = require("./models/notice");
 
-// var detailRoutes    = require("./routes/detail");
-// var DATABASEURL = mongodb://localhost/ems ;
 // mongoose.connect("mongodb://localhost/ems");
- // mongoose.connect(process.env.DATABASEURL);
+
 mongoose.connect("mongodb://ahmad242:ahmad242@ds261969.mlab.com:61969/smp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
