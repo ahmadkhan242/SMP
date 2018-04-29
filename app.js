@@ -16,7 +16,8 @@ var Notice            = require("./models/notice");
 
 var detailRoutes    = require("./routes/detail");
 
-mongoose.connect("mongodb://localhost/ems");
+mongoose.connect(process.env.DATABASEURL);
+// mongoose.connect("mongodb://<ahmad242>:<ahmad242>@ds261969.mlab.com:61969/smp")
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(methodOverride("_method"));
@@ -221,6 +222,6 @@ function isLoggedIn(req, res, next){
   }
   res.redirect("/login");
 };
-app.listen(2000, function(){
-  console.log("your server is on from port 2000");
+app.listen(process.env.DATABASEURL, function(){
+  console.log("your server is on from port DATABASEURL");
 });
