@@ -1,0 +1,113 @@
+
+
+<% include header %>
+<div >
+  <h2 style="padding:0px;">View details of Students</h2>
+
+  <!-- <div class="form-group">
+      <label for="sel1">Department</label>
+      <select class="form-control" style="height:30px;" id="sel1">
+        <option></option>
+        <% departments.forEach(function(dep){%>
+            <option><%= dep.name %></option>
+          <%})%>
+    </select> -->
+    <!-- Select with floating label and arrow -->
+
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"  >
+        <input type="text" value="" class="mdl-textfield__input" id="sample41" readonly>
+        <input type="hidden" value="" name="sample41">
+        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+        <label for="sample41" class="mdl-textfield__label">Department</label>
+        <ul for="sample41" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+          <% departments.forEach(function(dep){%>
+            <li class="mdl-menu__item"><%= dep.name %></li>
+            <%})%>
+        </ul>
+    </div>
+
+  <!-- <div class="form-group">
+    <label for="sel1">Semester</label>
+      <select class="form-control" style="height:30px;" id="sel1">
+          <option></option>
+        <% semesters.forEach(function(sem){%>
+          <option><%= sem.semester %></option>
+          <%})%>
+    </select>
+  </div> -->
+
+  <!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select">
+      <input type="text" value="" class="mdl-textfield__input" id="sample4" readonly>
+      <input type="hidden" value="" name="sample4">
+      <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+      <label for="sample4" class="mdl-textfield__label">Semester</label>
+      <ul for="sample4" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+        <% semesters.forEach(function(sem){%>
+          <li class="mdl-menu__item"><%= sem.semester %></li>
+          <%})%>
+      </ul>
+  </div> -->
+  <div class="mdl-textfield mdl-js-textfield getmdl-select">
+      <input class="mdl-textfield__input" value="" id="country" readonly/>
+      <input value="" type="hidden" name="country"/>
+      <label class="mdl-textfield__label" for="country">Сountry</label>
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="country">
+        <li class="mdl-menu__item" data-val="BLR">Belarus</li>
+        <li class="mdl-menu__item" data-val="BRA">Brazil</li>
+        <li class="mdl-menu__item" data-val="FRA">France</li>
+        <li class="mdl-menu__item" data-val="DEU">Germany</li>
+        <li class="mdl-menu__item" data-val="RUS">Russia</li>
+      </ul>
+   </div>
+        <form class="" action="index.html" method="post">
+
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Submit
+        </button>
+</form>
+
+<!-- <div class="mdl-cell mdl-cell--12-col mdl-grid">
+        <div>
+
+                <p>Select department and semester</p>
+                <form id="student-details-form" action="students/" method="POST">
+
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
+                        <input type="text" class="mdl-textfield__input" id="dept_name" readonly>
+                        <input type="hidden" value="" name="dept_name">
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        <label for="dept_name" class="mdl-textfield__label">Department</label>
+                        <ul for="dept_name" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <% departments.forEach(function(dep){%>
+                            <li class="mdl-menu__item"><%= dep.name %></li>
+                            <%})%>
+                        </ul>
+                    </div>
+                    <br>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
+                        <input type="text" class="mdl-textfield__input" id="semester" readonly>
+                        <input type="hidden" value="" name="semester">
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        <label for="semester" class="mdl-textfield__label">Semester</label>
+                        <ul for="semester" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <% semesters.forEach(function(sem){%>
+                            <li class="mdl-menu__item"><%= sem.semester %></li>
+                            <%})%>
+                        </ul>
+                    </div>
+                </form>
+                <button
+                    type="submit"
+                    form="student-details-form"
+                    class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">
+                        Submit
+                </button>
+
+
+              </div> -->
+
+
+
+
+</div>
+<% include footer %>

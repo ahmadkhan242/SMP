@@ -1,0 +1,33 @@
+<% include header %>
+<div class="" style="display:felx;">
+      <h1>Notice Board</h1>
+      <form class="" action="/new_notice" method="get" style="padding-left:10px;">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        Add new one
+        </button>
+      </form>
+<div class="mdl-grid">
+  <%notices.forEach(function(notice){%>
+  <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col" style="margin-right:7px;">
+    <div class="mdl-card__title one mdl-card--expand" style="background:url('<%=notice.imagen%>') center / cover;">
+
+      <h2 class="mdl-card__title-text"><%=notice.author.username%></h2>
+    </div>
+    <div class="mdl-card__supporting-text" style="font-size:17px; color:black;">
+        <!-- <h2 class="mdl-card__title-text"><strong>Notice</strong></h2> -->
+
+      <%=notice.notice%>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <form class="" action="/<%= notice._id %>?_method=DELETE" method="post">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          Date=><%=notice.date%>
+        </a>
+      </form>
+    </div>
+  </div>
+    <%})%>
+</div>
+</div>
+
+<% include footer %>

@@ -1,0 +1,30 @@
+
+<% include header %>
+
+
+<div class="" style="width:100%; margin: 20px;">
+  <h2 style="padding:0px;">View details of Students and Teachers</h2>
+<h3>Select Catogary</h3>
+<div class="" style="display:flex;">
+  <form class="" action="/detail/student" method="post" >
+    <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="border-radius:4px;" ng-non-bindabletype="submit" name="button">
+  Students
+</button>
+    <!-- <div class="form-group">
+      <button class="btn btn-lg btn-success btn-block" type="submit" name="button">Students</button>
+    </div> -->
+  </form>
+  <form class="" action="/detail/teacher" method="post">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" style="margin-left:20px;border-radius:4px;"ng-non-bindabletype="submit" name="button">
+      Teachers
+    </button>
+
+    <!-- <div class="form-group">
+      <button class="btn btn-lg btn-success btn-block" type="submit" name="button">Teachers</button>
+    </div> -->
+  </form>
+</div>
+
+  </div>
+<% include footer %>

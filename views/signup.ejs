@@ -1,0 +1,123 @@
+<% include header %>
+
+<!-- <div class="container">
+  <div class="" style="width:40%; margin: 10px;">
+    <h1 >Register for New User</h1>
+  <div class="jumbotron">
+    <form class="" action="/register" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="[object Object]">Full Name</label>
+          <input class="form-control" type="text" name="nameu" value="" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Username</label>
+          <input class="form-control" type="text" name="username" value="" placeholder="Username">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Password</label>
+          <input class="form-control" type="password" name="password" value="" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Department</label>
+          <input class="form-control" type="text" name="departmentu" value="" placeholder="Department">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Year</label>
+          <input class="form-control" type="number" name="yearu" value="" placeholder="Year">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Phone Number</label>
+          <input class="form-control" type="number" name="phone_numberu" value="" placeholder="Phone Number">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Date Of Birth</label>
+          <input class="form-control" type="number" name="dobu" value="" placeholder="Date of Birth">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="[object Object]">ID card Number</label>
+          <input class="form-control" type="number" name="idcardu" value="" placeholder="Id Card NO">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="[object Object]">Roll Number</label>
+          <input class="form-control" type="number" name="rollnou" value="" placeholder="Roll NO">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="[object Object]">Profile Photo</label>
+          <input class="form-control" type="text" name="imageu" value="" placeholder="Photo">
+        </div>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-lg btn-success btn-block"type="submit" name="button">Submit!</button>
+      </div>
+    </form>
+  </div>
+  </div>
+</div> -->
+
+
+
+
+<div class="mdl-layout mdl-js-layout mdl-color--grey-100" style="width:40%; margin-left: 230px;">
+<main class="mdl-layout__content">
+  <div class="mdl-card mdl-shadow--6dp">
+    <div class="mdl-card__title mdl-color--primary mdl-color-text--white">
+      <h2 class="mdl-card__title-text">Register Here</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <form action="/register" method="post">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" name="nameu" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Full Name</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" name="username" id="username" />
+          <label class="mdl-textfield__label" for="username">Username</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="password" name="password" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Password</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" name="departmentu" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Department</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="number" name="yearu" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Year</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="number" name="phonenumberu" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Phone Number</label>
+        </div>
+        <!-- <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" name="dobu" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Date of Birth</label>
+        </div> -->
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="number" name="rollnou" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Roll Number</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" name="imageu" id="userpass" />
+          <label class="mdl-textfield__label" for="userpass">Profile photo</label>
+        </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">SignUp</button>
+    </div>
+    </form>
+      </div>
+  </div>
+</main>
+</div>
+<% include footer %>
