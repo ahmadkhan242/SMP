@@ -124,9 +124,7 @@ app.get("/attendance",isLoggedIn, function(req, res){
 app.post("/attendance",isLoggedIn, function(req, res){
   res.render('list');
 });
-// app.get("/schedule",isLoggedIn, function(req, res){
-//   res.render('schedule');
-// });
+
 
 app.get("/notifications", function(req, res){
   res.render('notifications');
@@ -164,13 +162,6 @@ app.post("/", function(req, res){
 });
 app.get("/account", function(req, res){
   res.render('account');
-  // User.find({},function(err, allUser){
-  //   if(err){
-  //     console.log(err);
-  //   } else {
-  //       res.render('account',{userU:allUser});
-  //   }
-  // });
 })
 //===============================
 // FOR SIGNUP
@@ -230,31 +221,6 @@ function isLoggedIn(req, res, next){
   }
   res.redirect("/login");
 };
-
-
-
-// function checkLogin(req,res , next){
-//   if(req.isAuthenticated()){
-//     Campground.findById(req.params.id, function(err, foundCampground){
-//       if(err){
-//         console.log(err);
-//         res.redirect("/campgrounds");
-//       }else {
-//         if(foundCampground.author.id.equals(req.user._id)){
-//           next();
-//         }else {
-//           res.redirect('back');
-//         }
-//       }
-//     });
-//   }else {
-//     res.redirect('/login');
-//   }
-// }
-
-
-
-
 app.listen(2000, function(){
   console.log("your server is on from port 2000");
 });
