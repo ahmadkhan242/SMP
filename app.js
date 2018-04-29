@@ -223,6 +223,6 @@ function isLoggedIn(req, res, next){
   }
   res.redirect("/login");
 };
-app.listen(2000, function(){
+app.listen(process.env.PORT || 5000, function(){
   console.log("your server is on from port 2000");
 });
